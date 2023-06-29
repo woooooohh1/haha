@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지</title>
+    
+    <style>
+        *{
+            margin: 0px; padding: 0px;
+        }
+        @media all and (min-width:768px) and (max-width:1024px) { 
+            .box01{
+                /* width: 100%; */
+                /* display: block; */
+                /* justify-content: center; */
+            }
+    } 
+        @media all and (min-width:1025px){ 
+        .box01{
+            width: 1024px;
+            margin: 0px auto;
+            /* justify-content: center; */
+            /* display: block; */
+        } 
+    }
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+    @media all and (min-width:480px) and (max-width:767px) {
+        .box01{
+            /* display: block; */
+                /* width: 100%; */
+                /* justify-content: center; */
+            }
+    } 
+            
+        
+    </style>
+</head>
+<body>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+    <div class="box01">
+        <img src="./img.png" usemap="#image-map" id="img">
+        <map name="image-map">
+            <area target="-brank" alt="더베딩샵" title="더베딩샵" href="https://smartstore.naver.com/thebeddingshop" coords="2,-1,772,542" shape="rect">
+            <area target="" alt="더베딩샵" title="더베딩샵" href="https://smartstore.naver.com/thebeddingshop/category/f90a1f829e0f43b5891a2347e145d639?cp=1" coords="0,547,257,707" shape="rect">
+            <area target="" alt="더베딩샵" title="더베딩샵" href="https://smartstore.naver.com/thebeddingshop/category/4ca4eb2d45884acb9357d7761342651d?cp=1" coords="258,545,544,707" shape="rect">
+            <area target="" alt="더베딩샵 공지" title="더베딩샵 공지" href="https://smartstore.naver.com/thebeddingshop/notice/list?cp=2" coords="544,545,771,706" shape="rect">
+        </map>
+    </div>
+    <script>
+        $(document).ready(function(){
+            $('img[usemap]').rwdImageMaps();
+            $("#img").width("100%");
+        });
+    </script>
+</body>
+</html>
