@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="intro.jpg" usemap="#image-map" id="img">
+
+<map name="image-map">
+    <area target="_blank" alt="3d 메쉬통풍베개" title="3d 메쉬통풍베개" href="https://www.akmall.com/goods/GoodsDetail.do?goods_id=111705851" coords="489,638,13,1185" shape="rect">
+    <area target="_blank" alt="코골이 경추베개" title="코골이 경추베개" href="https://www.akmall.com/goods/GoodsDetail.do?goods_id=111706094" coords="502,639,944,1187" shape="rect">
+    <area target="_blank" alt="냉감 홑이불" title="냉감 홑이불" href="https://www.akmall.com/goods/GoodsDetail.do?goods_id=115813855" coords="16,1277,489,1846" shape="rect">
+    <area target="_blank" alt="엑스트라 쿨 냉감 패드" title="엑스트라 쿨 냉감 패드" href="https://www.akmall.com/goods/GoodsDetail.do?goods_id=117103986" coords="506,1279,946,1847" shape="rect">
+</map>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="http://mattstow.com/experiment/responsive-image-maps/jquery.rwdImageMaps.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('img[usemap]').rwdImageMaps();
+        $("#img").width("100%");
+    });
+</script>
+</body>
+</html>
